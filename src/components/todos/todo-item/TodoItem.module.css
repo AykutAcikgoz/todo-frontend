@@ -1,0 +1,92 @@
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+.deadline_not_missed {
+  background-color: #4b4b4b;
+}
+
+.deadline_missed {
+  background-color: #ff6666;
+}
+
+.todo-item_text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.todo-item h2 {
+  color: #3a3a3a;
+  font-size: 1rem;
+  flex: 1;
+  margin: 0 1rem;
+  color: white;
+}
+
+.todo-item h3 {
+  color: #3a3a3a;
+  font-size: 0.75rem;
+  flex: 1;
+  margin: 0 1rem;
+  color: white;
+}
+
+.todo-item_status_completed {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #40005d;
+  border: 1px solid white;
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+
+.todo-item_status_incomplete {
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  background-color: #707000;
+  border: 1px solid black;
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+
+.incomplete {
+  color: black;
+  background-color: #707000;
+  border: 1px solid black;
+}
+
+.todo-item_status_change {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #00500d;
+  border: 1px solid white;
+  padding: 0.5rem;
+  border-radius: 12px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+@media (min-width: 580px) {
+  .todo-item_text {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+  }
+
+  .todo-item_text h2 {
+    font-size: 1.25rem;
+  }
+
+  .todo-item_text h3 {
+    font-size: 1rem;
+  }
+}
